@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="index.css" rel="stylesheet" />
+    <title>Inschrijfformulier</title>
+</head>
+<body>
+    <h1 class="title">Schrijf u in voor ons volgende evenement!!</h1>
+    <div class="form">
+        <div class="form__group">
+            <label>Voornaam</label><br/>
+            <input type="text" 
+                   required 
+                   class="input" 
+                   id="firstName"
+                   placeholder="uw voornaam..." />
+            <span class="required-field">voornaam is een verplicht veld</span>
+        </div>
+        <div class="form__group">
+            <label>Naam</label><br/>
+            <input type="text" verplicht class="input" id="name" placeholder="uw naam..."  />
+            <span class="required-field">naam is een verplicht veld</span>
+        </div>
+        <div class="form__group">
+            <label>Age</label><br/>
+            <input type="text" class="input" verplicht id="leeftijd" placeholder="uw leeftijd..." />
+            <span class="required-field">leeftijd is een verplicht veld</span>
+        </div>
+        <div class="form__group">
+            <label>Address</label><br/>
+            <input type="text" class="input" id="address" placeholder="uw adres..." />
+            <span class="required-field">adres is een verplicht veld</span>
+        </div>
+        <div class="form__group">
+            <label>Email</label><br/>
+            <input type="email" required class="input" id="email" placeholder="uw email..." />
+            <span class="required-field is-error-visible">email is een verplicht veld</span>
+            <span class="repetition-field">email is al in gebruik</span>
+        </div>
+        <div class="form__group">
+            <label>Telephone</label><br/>
+            <input type="tel" required class="input" id="telephone" placeholder="uw telefoon..." />
+            <span class="required-field is-error-visible">telefoon is een verplicht veld</span>
+        </div>
+        <button class="button is-primary" id="saveButton" disabled onclick="save()">Save</button>
+        <button type="reset" class="button is-danger">Delete</button>
+    </div>
+    <h2 class="subtitle">Reeds Ingeschreven</h2>
+    <div class="inschrijvingen">
+        <ul id="inschrijvingenList">
+           
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

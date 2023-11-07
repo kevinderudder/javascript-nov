@@ -1,0 +1,30 @@
+body{
+    font-family: Helvetica, Geneva, Tahoma, sans-serif;
+    margin: 20px 30px;
+}
+
+h1{
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.form__group{
+    margin-bottom: 10px;
+}
+
+.is-invalid, .is-invalid-email{
+    border-color:red;
+}
+
+
+.required-field, .repetition-field{
+    color: hotpink;
+    display: none;
+}
+
+.is-invalid + .required-field, 
+.repetition-is-active {
+    display: inline;
+}
+
+

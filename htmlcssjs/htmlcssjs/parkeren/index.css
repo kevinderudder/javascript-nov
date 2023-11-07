@@ -1,0 +1,43 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+.parking-spots{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parking-spot{
+    background-color: rgb(10, 103, 209);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.parking-spot__icon{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parking-spot__title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.parking-spot__info{
+    text-align: center;
+}
+
+
+
+footer{
+    text-align: center;
+}
